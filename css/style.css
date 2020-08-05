@@ -9686,3 +9686,14 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+
+
+@font-face {
+    font-family: 'dosisextralight';
+    src: url('fonts/dosis-variablefont_wght.woff2') format('woff2'),
+         url('font/dosis-variablefont_wght.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
