@@ -519,45 +519,46 @@
 				<p>Si vous souhaitez découvrir notre école, notre environnement et notre équipe pédagogique, nous vous prions de bien vouloir remplir ce formulaire.</p>
 				
 	          </div>
-	          <form action="mailto:aboussaid10@gmail.com" method="POST" class="appointment-form ftco-animate" enctype="text/plain">
+	          <form class="appointment-form ftco-animate" enctype="text/plain">
 				<h4 style="color:white; text-align: center;"><b>Informations sur l'enfant</b></h4>	
 					<div class="d-md-flex">
 		    				<div class="form-group">
-		    					<input type="text" class="form-control" placeholder="Nom de l'enfant" name="nom_enfant">
+		    					<input type="text" class="form-control" placeholder="Nom de l'enfant" id="nomenfant">
 		    				</div>
 		    				<div class="form-group ml-md-4">
-		    					<input type="text" class="form-control" placeholder="Prenom de l'enfant" name="prenom_enfant">
+		    					<input type="text" class="form-control" placeholder="Prenom de l'enfant" id="prenomenfant">
 							</div>
 							
 						</div>
 						<div class="d-md-flex">
 							<div class="form-group">
-		    					<input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" class="form-control" placeholder="Date de naissance de l'enfant" name="date_naissance">
+		    					<input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" class="form-control" placeholder="Date de naissance de l'enfant" id="datenaissance">
 							</div>
 							<div class="form-group ml-md-4">
-		    					<input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" class="form-control" placeholder="Date d'entrée souhaitée" name="date_entree">
+		    					<input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" class="form-control" placeholder="Date d'entrée souhaitée" id="dateentree">
 		    				</div>
 						</div>
 						<h4 style="color:white;text-align: center;"><b>Personne à contacter</b></h4>	
 						<div class="d-md-flex">
 		    				<div class="form-group">
-		    					<input type="text" class="form-control" placeholder="Nom" name="nom_contact">
+		    					<input type="text" class="form-control" placeholder="Nom" id="nomcontact" required>
 		    				</div>
 		    				<div class="form-group">
-		    					<input type="text" class="form-control" placeholder="Prenom" name="prenom_contact">
+		    					<input type="text" class="form-control" placeholder="Prenom" id="prenomcontact" required>
 		    				</div>
 						</div>
 						<div class="d-md-flex">
 		    				<div class="form-group">
-		    					<input type="text" class="form-control" placeholder="Telephone" name="telephone_contact">
+		    					<input type="text" class="form-control" placeholder="Telephone" id="telephonecontact" required>
 		    				</div>
 		    				<div class="form-group">
-		    					<input type="text" class="form-control" placeholder="Email" name="email_contact">
+		    					<input type="text" class="form-control" placeholder="Email" id="emailcontact">
 		    				</div>
 						</div>
 						<div class="d-md-flex">
-		    				<div class="form-group center">								
-								<a href="mailto:customer@email.com?subject=Pre Insicription&body=hi" value="Valider" type="submit" class="col-md-6 btn btn-secondary py-3 px-4" style="color:white">Valider</a>
+		    				<div class="form-group center">			
+								<button class="col-md-6 btn btn-secondary py-3 px-4" onclick="sendemail()">Valider</button>					
+								<!--<a href="mailto:customer@email.com?subject=Pre Insicription&body=nom_contact="+nom_contact value="Valider" type="submit" class="col-md-6 btn btn-secondary py-3 px-4" style="color:white">Valider</a>-->
 		    				</div>
 						</div>
 						
@@ -574,7 +575,22 @@
         </div>
     	</div>
     </section>
-
+<script>
+	function sendemail(){
+		
+		var nom_enfant = document.getElementById("nomenfant").value;
+		var prenom_enfant = document.getElementById("prenomenfant").value;
+		var date_entree = document.getElementById("dateentree").value;
+		var nom_contact = document.getElementById("nomcontact").value;
+		var prenom_contact = document.getElementById("prenomcontact").value;
+		var telephone_contact = document.getElementById("telephonecontact").value;
+		var email_contact = document.getElementById("emailcontact").value;
+		var datenaissance = document.getElementById("datenaissance").value;
+		if (telephone_contact !="" && nom_contact !="")
+		window.location = "mailto:aboussaid10@gmail.com?&subject=Preinscription&body=Nom de la personne à contacter:"+nom_contact+"%0D%0APrenom de la personne à contacter:"+prenom_contact+"%0D%0ATéléphone:"+telephone_contact+"%0D%0A Email:"+email_contact+"%0D%0APrenom de l'enfant:"+prenom_enfant+"%0D%0ANom de l'enfant:"+nom_enfant+"%0D%0ADate d'entrée:"+date_entree+"%0D%0ADate de naissance:"+datenaissance;
+	}
+	
+</script>
     <!--<section class="ftco-section">
     	<div class="container">
     		<div class="row justify-content-center mb-5 pb-2">
