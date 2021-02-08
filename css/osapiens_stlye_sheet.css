@@ -3233,3 +3233,7 @@ fill: #4BC676
 padding: 0 !important;
 background:#ffffff !important;
 }
+
+.table-container .top-panel {
+    background: #000000 !important;
+}
