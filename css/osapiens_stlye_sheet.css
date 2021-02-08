@@ -3016,11 +3016,11 @@ table.grid td {
 
   font-weight: bolder;
   color:white;
-  background-color: #006992;
+  background-color: #4BC676;
   padding:1em;
-  border: #000;
+  /*border: #000;
   border-style: solid;
-  border-width: 1px;
+  border-width: 1px;*/
 }
   
 .SchemaTable-ColumnLabel {  
