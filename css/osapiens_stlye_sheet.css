@@ -2072,7 +2072,7 @@ select[multiple]:focus option:checked {
   right: 0;
   top: 0;
   bottom: 0;
-  padding: 0px;
+  padding: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2973,10 +2973,10 @@ table.grid td {
 /* 07 SchemaTable 
 ---------------------------------------------------*/
 .SchemaTable {  
-  border-top: thin solid #444444;  
+ /* border-top: thin solid #444444;  
   border-left: thin solid #444444;  
   border-right: thin solid #111111;  
-  border-bottom: thin solid #111111;  
+  border-bottom: thin solid #111111;  */
   /* margin-left: auto;
   margin-right: auto; */
 }  
@@ -3004,9 +3004,9 @@ table.grid td {
 
 
 .SchemaTable-DataType {
-  border-left: #000;
-  padding-left: 2em;
-
+  border-left: #fff;
+  /*padding-left: 2em;*/
+  padding: 10px;
   border-width: 0 0 0 1px;
   border-style: solid;
 }
