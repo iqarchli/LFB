@@ -3210,7 +3210,7 @@ table.grid td {
 }
 
 .news-header-title{
-color: black
+color: #000000
 }
 
 #white_logo_img{
@@ -3227,4 +3227,9 @@ fill: #4BC676
 }
 .nav-sub-item.active svg, .nav-sub-item:hover svg {
  fill: #ffffff;
+}
+
+.mainWrapper.news{
+padding: 0
+background:#ffffff;
 }
