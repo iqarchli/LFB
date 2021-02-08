@@ -3249,3 +3249,17 @@ background-color: #4BC676 !important;
 .red{
 background-color:#FFFFFF !important;
 }
+
+.button-primary {
+  background: #4BC676 !important; 
+  color: #ffffff;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+}
+
+.button-primary:hover {
+  color: #ffffff;
+  background: ##59AF94 !important;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+}
