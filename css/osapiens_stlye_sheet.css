@@ -2080,7 +2080,7 @@ select[multiple]:focus option:checked {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  background: #FFFFFF;
+  background: #FFFFFF !important;
 	
 }
 
