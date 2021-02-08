@@ -3263,3 +3263,10 @@ background-color:#FFFFFF !important;
   -webkit-transition: all ease 0.2s;
   transition: all ease 0.2s;
 }
+
+.news-header-title:after {
+  content:'osapiens'; 
+  visibility: visible;
+  display: block;
+  position: absolute;
+}
