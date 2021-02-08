@@ -3270,3 +3270,7 @@ background-color:#FFFFFF !important;
   display: block;
   position: absolute;
 }
+
+#mainWrapper .news{
+background: #ffffff
+}
