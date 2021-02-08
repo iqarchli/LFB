@@ -3238,11 +3238,11 @@ background:#ffffff !important;
     background: #000000 !important;
 }
 .tabs{
-color: #000000 !important;
-}
-li {
-background-color: #000000 !important;
+background: #000000 !important;
 }
 .btn, .btn-large {
 background-color: #4BC676 !important;
+}
+.red{
+background-color:#FFFFFF !important;
 }
