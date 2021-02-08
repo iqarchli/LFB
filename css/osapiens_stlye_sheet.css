@@ -2706,11 +2706,11 @@ input[type=text] {
   align-items: center;
   height: 32px;
   padding: 5px 15.0px;
-  color: #006992;
+  color: #4BC676;
   background: #ffffff;
   text-decoration: none;
   outline: none;
-  border: 1px solid #006992;
+  border: 1px solid #4BC676;
   border-radius: 4px;
   cursor: pointer;
   -webkit-transition: all ease 0.2s;
@@ -2789,7 +2789,7 @@ input[type=text] {
 }
 
 .button-primary {
-  background: #006992;
+  background: #4BC676;
   color: #ffffff;
   -webkit-transition: all ease 0.2s;
   transition: all ease 0.2s;
@@ -2797,13 +2797,13 @@ input[type=text] {
 
 .button-primary:hover {
   color: #ffffff;
-  background: #005a7e;
+  background: ##59AF94;
   -webkit-transition: all ease 0.2s;
   transition: all ease 0.2s;
 }
 
 .button-primary:active {
-  background: #004c69;
+  background: #4BC676;
   -webkit-transition: all ease 0.2s;
   transition: all ease 0.2s;
 }
