@@ -3230,6 +3230,6 @@ fill: #4BC676
 }
 
 .mainWrapper.news{
-padding: 0
-background:#ffffff;
+padding: 0 !important;
+background:#ffffff !important;
 }
