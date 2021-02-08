@@ -2072,7 +2072,7 @@ select[multiple]:focus option:checked {
   right: 0;
   top: 0;
   bottom: 0;
-  padding: 30px;
+  padding: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
