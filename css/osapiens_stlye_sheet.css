@@ -2973,6 +2973,7 @@ table.grid td {
 /* 07 SchemaTable 
 ---------------------------------------------------*/
 .SchemaTable {  
+border: 0;
  /* border-top: thin solid #444444;  
   border-left: thin solid #444444;  
   border-right: thin solid #111111;  
